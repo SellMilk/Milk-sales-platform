@@ -186,7 +186,7 @@ html, body{
 #userPage-head span{
     color: gold;font-weight:bold;font-style: italic;
 }
-/*用户操作*/
+/*用户操作样式开始*/
 #userPage-data{
     padding: 20px 0 0 20px;
 }
@@ -198,7 +198,8 @@ html, body{
 #userPage-data img{
     width: 20px;
 }
-/*个人资料*/
+/*用户操作样式结束*/
+/*个人资料样式开始*/
 #userPage-datum h1{
     margin: 22px 0;
     font-size: 3rem;
@@ -211,4 +212,5 @@ html, body{
     color: rgb(85,26,139);
     font-size: 1.6rem;
 }
+/*个人资料样式结束*/
 /*用户页结束*/
