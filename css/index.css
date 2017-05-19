@@ -71,19 +71,28 @@ html{
     width: 100%;
     height: 140px;
     border-bottom: 1px solid #cccccc;
+    position: relative;
 }
 .home-container .product-img{
-    display: inline-block;
+    position: absolute;
     height: 140px;
     width: 140px;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 .home-container .product-img img{
     height: 100%;
     width: 100%;
 }
-.home-container .product-title{
-    font-size: 1.6rem;
+.home-container .product-describe{
     display: inline-block;
+    padding-left: 145px;
+    width: 100%;
+    height: 100%;
+}
+.home-container .product-title{
+    margin-top: 5px;
+    font-size: 1.6rem;
 }
 .home-container .down{
     text-align: center;
