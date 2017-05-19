@@ -166,9 +166,9 @@ html, body{
 /*用户页开始*/
 #userPage-head{
     clear: both;
-    padding:5% 0 5% 10%;
+    /*padding:5% 0 5% 10%;*/
     border: 1px solid #ccc;
-    height: 48px;
+    height: 60px;
     font-size: 1.6rem;
     background: rgba(251,262,155,0.4);
 }
