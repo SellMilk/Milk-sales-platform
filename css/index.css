@@ -166,11 +166,10 @@ html, body{
 /*用户页开始*/
 #userPage-head{
     clear: both;
-    /*padding:5% 0 5% 10%;*/
+    padding:3.5% 0 0 10%;
     border: 1px solid #ccc;
-    height: 60px;
-    font-size: 1.6rem;
-    background: rgba(251,262,155,0.4);
+    height: 80px;
+    background: rgba(0,150,255,0.8);
 }
 #userPage-head img{
     float: left;
@@ -180,6 +179,7 @@ html, body{
     border-radius: 50%;
 }
 #userPage-head p{
+    font-size: 1.6rem;
     margin-left: 58px;
     line-height: 48px;
 }
@@ -190,10 +190,12 @@ html, body{
 #userPage-data{
     padding: 20px 0 0 20px;
 }
+#userPage-data p{
+    margin: 1.2rem 0 1.2rem 0;
+}
 #userPage-data a{
     color: rgb(85,26,139);
-    border-bottom: 1px solid #ccc;
-    /*margin-bottom: 2.06rem;*/
+    font-size: 1.8rem;
 }
 #userPage-data img{
     width: 20px;
@@ -208,7 +210,15 @@ html, body{
 #userPage-datum p{
     margin: 1.2rem 0 1.2rem 0;
 }
-#userPage-datum a{
+#userPage-datum h1 a{
+    width: 39px;
+    height: 39px;
+    font-size: 3.4rem;
+}
+#user-content {
+    padding: 0 5%;
+}
+#user-content a{
     color: rgb(85,26,139);
     font-size: 1.6rem;
 }
