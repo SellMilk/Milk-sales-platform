@@ -192,8 +192,6 @@ html, body{
 }
 #userPage-data a{
     color: rgb(85,26,139);
-    border-bottom: 1px solid #ccc;
-    /*margin-bottom: 2.06rem;*/
 }
 #userPage-data img{
     width: 20px;
