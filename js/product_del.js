@@ -2,6 +2,7 @@
     $('#nav li').on('click', function(){
         $(this).addClass('selected').siblings().removeClass('selected');
         $('#goods ul').eq($(this).index()).addClass('selected').siblings().removeClass('selected');
+        $('#order ul').eq($(this).index()).addClass('selected').siblings().removeClass('selected');
     });
      var oLi = $('#goods ul li');
      oLi.on('click',function() {
