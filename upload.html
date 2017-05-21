@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>牛奶销售平台</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+	<div id="index">
+		<form class="navbar-form navbar-left" role="search">
+		  <div class="form-group">
+			  <div id="upload_name" class="upload">
+			  	<label for="name">牛奶名称</label>
+				    <input type="text"  class="form-control" placeholder="请输入牛奶名称" name="name" id="name" style="display: inline-block;width:75%">	
+			  </div>
+			  <div id="upload_price" class="upload">
+			  	<label for="price">牛奶价格</label>
+				    <input type="text" class="form-control" placeholder="请输入牛奶价格" name="price" id="price" style="display: inline-block;width:75%">	
+			  </div>
+			  <div id="upload_period" class="upload">
+			  	<label for="period" style="display: inline-block;">牛奶保质期</label>
+				    <input type="number" class="form-control" placeholder="请输入保质期" name="period" id="period" style="display: inline-block;width:70%">
+			  </div>
+			  <div id="upload_area" class="upload">
+			  	<label for="area" style="display: inline-block;">牛奶产地</label>
+				   <input type="text" class="form-control" placeholder="请输入产地" name="area" id="area" style="display: inline-block;width:75%">	
+			  </div>
+			  <div id="clipArea" ></div>
+			  <div id="upload_photo" class="upload">
+			  	<label for="file"><span>请上传照片</span>
+			  	<div id="add">+</div>
+			  	<button type="button" id="clipBtn">截取</button>
+			  	<div id="view"></div>
+			  	</label>
+				   <input type="file" class="form-control" name="photo" id="file" style="width: 95%;display:none">	
+			  </div>
+			  <div id="upload_num_buy" class="upload">
+			  	<label for="num_buy" style="display: inline-block;">牛奶库存</label>
+				   <input type="text" class="form-control" placeholder="请输入库存" name="num_buy" id="num_buy" style="display: inline-block;width:75%">	
+			  </div>	
+			  <div id="upload_discount" class="upload">
+			  	<label for="discount" style="display: inline-block;">牛奶折扣</label>
+				   <input type="text" class="form-control" placeholder="请输入折扣" name="discount" id="discount" style="display: inline-block;width:75%">	
+			  </div>			    
+				<button type="submit" class="btn" id="submit" style="height: 40px;background:#0096ff;color:white;font-size: 2rem">提交</button>
+			</div>
+		</form>
+	
+	</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SellMilk.js"></script>
+<script src="js/iscroll-zoom.js"></script>
+<script src="js/hammer.min.js"></script>
+<script src="js/lrz.all.bundle.js"></script>
+<script src="js/PhotoClip.js"></script>
+<script>
+
+ var pc = new PhotoClip('#clipArea', {
+		size: 200,
+		outputSize: 320,
+		//adaptive: ['60%', '80%'],
+		file: '#file',
+		view: '#view',
+		ok: '#clipBtn',
+		//img: 'img/mm.jpg',
+		loadStart: function() {
+			console.log('开始读取照片');
+		},
+		loadComplete: function() {
+			console.log('照片读取完成');
+		},
+		done: function(dataURL) {
+			$('#clipArea').height(0);
+			$('#view').height(100);
+			console.log(dataURL);
+		},
+		fail: function(msg) {
+			alert(msg);
+		}
+	});
+file.addEventListener('change', function() {
+	$('#clipArea').height(100);
+	pc.load(this.files[0]);	
+});
+</script>
+</body>
+</html>
