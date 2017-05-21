@@ -1,49 +1,214 @@
 /*用户页开始*/
-#userPage-head{
+#userPage-head {
     clear: both;
-    /*padding:5% 0 5% 10%;*/
+    padding: 3.5% 0 0 10%;
     border: 1px solid #ccc;
-    height: 60px;
-    font-size: 1.6rem;
-    background: rgba(251,262,155,0.4);
+    height: 80px;
+    background: rgba(0, 150, 255, 0.8);
 }
-#userPage-head img{
+
+#userPage-head img {
     float: left;
     width: 50px;
     height: 50px;
     border: 1px solid #ccc;
     border-radius: 50%;
 }
-#userPage-head p{
+
+#userPage-head p {
+    font-size: 1.6rem;
     margin-left: 58px;
     line-height: 48px;
 }
-#userPage-head span{
-    color: gold;font-weight:bold;font-style: italic;
+
+#userPage-head span {
+    color: gold;
+    font-weight: bold;
+    font-style: italic;
 }
+
 /*用户操作样式开始*/
-#userPage-data{
+#userPage-data {
     padding: 20px 0 0 20px;
 }
-#userPage-data a{
-    color: rgb(85,26,139);
-}
-#userPage-data img{
-    width: 20px;
-}
-/*用户操作样式结束*/
-/*个人资料样式开始*/
-#userPage-datum h1{
-    margin: 22px 0;
-    font-size: 3rem;
-    border-bottom: 1px solid #ccc; box-shadow: 1px 5px rgba(0,0,0,.2);
-}
-#userPage-datum p{
+
+#userPage-data p {
     margin: 1.2rem 0 1.2rem 0;
 }
-#userPage-datum a{
-    color: rgb(85,26,139);
+
+#userPage-data a {
+    color: rgb(85, 26, 139);
+    font-size: 1.8rem;
+}
+
+#userPage-data img {
+    width: 20px;
+}
+
+/*用户操作样式结束*/
+/*个人资料样式开始*/
+#userPage-datum h1 {
+    margin: 0;
+    line-height: 6rem;
+    font-size: 3rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
+}
+
+#userPage-datum p {
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+#userPage-datum h1 a {
+    width: 39px;
+    height: 39px;
+    font-size: 3.4rem;
+}
+
+#user-content {
+    padding: 0 5%;
+}
+
+#user-content a {
+    color: rgb(85, 26, 139);
     font-size: 1.6rem;
 }
+
+/*修改昵称开始*/
+#nickname-box h1 {
+    margin: 0;
+    line-height: 6rem;
+    font-size: 3rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
+}
+
+#nickname-box h1 a {
+    width: 39px;
+    height: 39px;
+    font-size: 3.4rem;
+}
+
+.nickname {
+    font-size: 1.8rem;
+    margin: 6rem 0 0 6rem;
+}
+
+#user-chname {
+    width: 40%;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    outline: none;
+}
+
+.submit {
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+}
+
+/*修改昵称结束*/
+/*修改密码开始*/
+#changepwd-box h1 {
+    margin: 0;
+    line-height: 6rem;
+    font-size: 3rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
+}
+
+#changepwd-box h1 a {
+    width: 39px;
+    height: 39px;
+    font-size: 3.4rem;
+}
+
+.user-chpwd {
+    width: 200px;
+    height: 270px;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.user-chpwd p {
+    margin: 10px 0;
+}
+
+.user-chpwd input {
+    outline: none;
+}
+
+.chpwd-submit {
+    margin-top: 10px;
+    width: 204px;
+    height: 29px;
+}
+
+/*修改密码结束*/
+/*收货地址开始*/
+
+#address-box h1, #addressEdit-box h1 {
+    margin: 0;
+    line-height: 6rem;
+    font-size: 3rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
+}
+
+#address-box h1 a, #addressEdit-box h1 a {
+    width: 39px;
+    height: 39px;
+    font-size: 3.4rem;
+}
+
+.edit {
+    float: right;
+    padding-right: 1.5rem;
+}
+
+.delete {
+    float: right;
+    padding-right: 1.5rem;
+    color: red;
+}
+
+#address-message {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+#address-box p {
+    margin: 1.2rem 0 1.2rem 0;
+    color: #ccc;
+}
+
+#address-message p span{
+    color: steelblue;
+}
+#addressEdit-box span{
+    font-size: 2.5rem;
+}
+#record-address {
+    margin: 2rem;
+    font-size: 1.8rem;
+}
+
+#record-address p {
+    margin: 1.2rem 0;
+}
+
+#record-address input {
+    outline: none;
+}
+
+/*收货地址结束*/
 /*个人资料样式结束*/
+/*联系客服开始*/
+.phone{
+    margin:2rem 0;
+    font-size: 2rem;
+}
+/*联系客服结束*/
 /*用户页结束*/
