@@ -1,0 +1,82 @@
+/*商品下架--周鑫阳*/
+* { margin: 0px; padding: 0px; }
+
+body, html { font-family: "Microsoft YaHei"; }
+
+ul { list-style: none; }
+
+#content { width: 10rem; background: #f4f4f4; font-family: "Microsoft YaHei"; }
+
+a { text-decoration: none; }
+
+#nav { width: 100%; background: #fff; overflow: hidden; }
+
+#nav li { float: left; display: block; width: 24.5%; text-align: center; font-size: 14px; cursor: pointer; color: #303030; padding-bottom: 0.32rem; padding-top: 0.32rem; }
+[data-dpr='2'] #nav li { font-size: 28px; }
+[data-dpr='3'] #nav li { font-size: 42px; }
+
+#nav li span { float: left; width: 1px; height: 0.32rem; background-color: #d6d6d6; }
+
+#nav li.selected { color: #0096ff; border-bottom: #0096ff 2px solid; }
+
+#search { width: 100%; overflow: hidden; height: 1.56rem; }
+
+#search .wrapper { width: 92%; height: 0.94rem; margin: 0.4rem auto; }
+
+#search .form-search { width: 68%; height: 0.92rem; float: left; position: relative; }
+
+#search .form-search .form-control { width: 100%; display: block; height: 100%; font-size: 12px; border-radius: 5px; color: #878787; text-indent: 10px; }
+[data-dpr='2'] #search .form-search .form-control { font-size: 24px; }
+[data-dpr='3'] #search .form-search .form-control { font-size: 36px; }
+
+#search .form-search img { width: 0.5rem; height: 0.5rem; position: absolute; left: 5.7rem; top: 0.25rem; cursor: pointer; }
+
+#search a { display: block; float: right; border: 2px #0096ff solid; border-radius: 5px; padding-top: 0.25rem; padding-bottom: 0.25rem; text-align: center; width: 25%; color: #0096ff; font-size: 12px; }
+[data-dpr='2'] #search a { font-size: 24px; }
+[data-dpr='3'] #search a { font-size: 36px; }
+
+#goods { width: 100%; background: #ffffff; }
+
+#goods ul { width: 96%; margin: 0 auto; }
+
+#goods li { width: 100%; height: 1.8rem; margin-top: 0.28rem; border-bottom: 2px #e5e5e5 solid; }
+
+#goods .icon { margin-top: 0.57rem; width: 0.43rem; height: 0.43rem; float: left; background-image: url("../imgs/product_del/noselected.png"); background-repeat: no-repeat; background-size: cover; background-position: center; display: block; }
+
+#goods .icon.selected { background-image: url("../imgs/product_del/selected.png"); }
+
+#goods .goods-img { width: 1.66rem; margin-left: 0.28rem; margin-right: 0.28rem; float: left; }
+
+#goods .goods-show { width: 6.5rem; height: 1.6rem; float: left; margin-top: 0.125rem; }
+
+#goods div { width: 100%; overflow: hidden; }
+
+#goods .goods-show .type { background: #56cd58; font-size: 12px; display: inline-block; height: 0.53rem; width: 2rem; text-align: center; line-height: 0.53rem; color: #ffffff; margin-right: 0.15rem; float: left; }
+[data-dpr='2'] #goods .goods-show .type { font-size: 24px; }
+[data-dpr='3'] #goods .goods-show .type { font-size: 36px; }
+
+#goods .goods-show .title { height: 0.53rem; width: 4rem; font-size: 16px; line-height: 0.53rem; color: #303030; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; float: left; }
+[data-dpr='2'] #goods .goods-show .title { font-size: 32px; }
+[data-dpr='3'] #goods .goods-show .title { font-size: 48px; }
+
+#goods .goods-show p { font-size: 12px; color: #a4a4a4; }
+[data-dpr='2'] #goods .goods-show p { font-size: 24px; }
+[data-dpr='3'] #goods .goods-show p { font-size: 36px; }
+
+#goods ul { display: none; }
+
+#goods ul.selected { display: block; }
+
+#go { width: 100%; margin-top: 2rem; padding-bottom: 2rem; }
+
+#go .wrapper { width: 9.1rem; margin: 0 auto; overflow: hidden; }
+
+#go .wrapper .btn { display: block; width: 4.3rem; height: 1.17rem; border-radius: 5px; font-size: 16px; text-align: center; line-height: 1.17rem; color: #ffffff; }
+[data-dpr='2'] #go .wrapper .btn { font-size: 32px; }
+[data-dpr='3'] #go .wrapper .btn { font-size: 48px; }
+
+#go .wrapper .left { background: #0096ff; float: left; }
+
+#go .wrapper .right { background: #04bd00; float: right; }
+
+/*# sourceMappingURL=distribution.css.map */
