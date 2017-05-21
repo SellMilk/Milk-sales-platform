@@ -26,7 +26,6 @@ $(function () {
         $(oDot[iNow]).addClass('selected').siblings().removeClass('selected animated fadeIn');
         
         var oTip = $(aTips[iNow]);
-        console.log(oTip);
         oTip.css({'display':'block'}).addClass('animated zoomIn').siblings().css({'display':'none'});
 
     }
@@ -40,9 +39,11 @@ $(function () {
     }, 5000);
 
     oContainer.on('mouseenter',function () {
+        console.log('in');
         clearInterval(timer);
     });
     oContainer.on('mouseleave',function () {
+        console.log('out');
         timer = setInterval(function(){
             iNow++;
             if(iNow == aTips.length){
