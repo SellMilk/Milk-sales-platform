@@ -43,7 +43,7 @@ html, body{
 }
 @media(max-width: 330px) {
     body, html{
-        font-size: 7px;
+        font-size: 9px;
     }
 }
 /*底部导航栏样式开始*/
