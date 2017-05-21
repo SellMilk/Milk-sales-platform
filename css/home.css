@@ -89,3 +89,8 @@
     width: 100%;
     color: #8c8c8c;
 }
+@media(max-width: 330px) {
+    .home-container .product-title{
+        height: 35px;
+    }
+}
