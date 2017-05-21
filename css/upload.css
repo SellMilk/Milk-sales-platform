@@ -8,8 +8,11 @@
     margin: 10px 0 0 0;
 }
 #submit{
-    margin-top: 20px;
-    width: 100%;
+    /*margin-top: 20px;*/
+    width: 90%;
+    /*text-align: center;*/
+    display: block;
+    margin: 20px auto; 
 }
 #add{
     display: inline-block;
