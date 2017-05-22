@@ -1,24 +1,37 @@
 /*用户页开始*/
+body{
+    background: rgb(244,244,244);
+}
+/*.userPage-box{*/
+    /*height: 100%;*/
+    /*background: rgb(244,244,244);*/
+/*}*/
 #userPage-head {
     clear: both;
-    padding: 3.5% 0 0 10%;
-    border: 1px solid #ccc;
-    height: 80px;
-    background: rgba(0, 150, 255, 0.8);
+    height: 150px;
+    display: flex;
+    background: #0097ff;
+    padding: 2rem 2rem;
+    color: #fff;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 
 #userPage-head img {
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border: 1px solid #ccc;
     border-radius: 50%;
 }
 
 #userPage-head p {
-    font-size: 1.6rem;
-    margin-left: 58px;
-    line-height: 48px;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-left: 1.2rem;
 }
 
 #userPage-head span {
@@ -29,34 +42,42 @@
 
 /*用户操作样式开始*/
 #userPage-data {
-    padding: 20px 0 0 20px;
-}
-
-#userPage-data p {
-    margin: 1.2rem 0 1.2rem 0;
+    margin: 20px 0 0 0;
+    padding: 0 20px;
+    background: white;
 }
 
 #userPage-data a {
-    color: rgb(85, 26, 139);
+    display: block;
+    margin: 1.2rem 0 1.2rem 0;
+    padding: 2% 0;
+    border-bottom: 1px solid #ddd;
+    color: inherit;
     font-size: 1.8rem;
+    box-sizing: inherit;
+}
+
+#userPage-data a:active {
+    background: rgba(12, 23, 100, .5);
 }
 
 #userPage-data img {
     width: 20px;
 }
 
+#userPage-data span {
+    float: right;
+}
+
 /*用户操作样式结束*/
 /*个人资料样式开始*/
 #userPage-datum h1 {
+    background: white;
     margin: 0;
     line-height: 6rem;
     font-size: 3rem;
     border-bottom: 1px solid #ccc;
     box-shadow: 1px 5px rgba(0, 0, 0, .2);
-}
-
-#userPage-datum p {
-    margin: 1.2rem 0 1.2rem 0;
 }
 
 #userPage-datum h1 a {
@@ -66,15 +87,33 @@
 }
 
 #user-content {
+    background: white;
     padding: 0 5%;
 }
 
 #user-content a {
-    color: rgb(85, 26, 139);
-    font-size: 1.6rem;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin: 1.2rem 0 1.2rem 0;
+    padding: 2% 0;
+    font-size: 1.8rem;
+    color: inherit;
+    box-sizing: inherit;
+}
+#user-content a:active{
+    background: rgba(12, 23, 100, .5);
+}
+
+#user-content span {
+    /*padding-right: 1.5rem;*/
+    float: right;
 }
 
 /*修改昵称开始*/
+
+#nickname-box{
+    background: white;
+}
 #nickname-box h1 {
     margin: 0;
     line-height: 6rem;
@@ -92,6 +131,7 @@
 .nickname {
     font-size: 1.8rem;
     margin: 6rem 0 0 6rem;
+    padding-bottom: 1rem;
 }
 
 #user-chname {
@@ -110,6 +150,9 @@
 
 /*修改昵称结束*/
 /*修改密码开始*/
+#changepwd-box{
+    background: white;
+}
 #changepwd-box h1 {
     margin: 0;
     line-height: 6rem;
@@ -148,7 +191,9 @@
 
 /*修改密码结束*/
 /*收货地址开始*/
-
+#address-box,#addressEdit-box{
+    background: white;
+}
 #address-box h1, #addressEdit-box h1 {
     margin: 0;
     line-height: 6rem;
@@ -184,12 +229,14 @@
     color: #ccc;
 }
 
-#address-message p span{
+#address-message p span {
     color: steelblue;
 }
-#addressEdit-box span{
+
+#addressEdit-box span {
     font-size: 2.5rem;
 }
+
 #record-address {
     margin: 2rem;
     font-size: 1.8rem;
@@ -205,10 +252,18 @@
 
 /*收货地址结束*/
 /*个人资料样式结束*/
+/*会员中心开始*/
+h4{
+    background: white;
+}
+/*会员中心结束*/
 /*联系客服开始*/
-.phone{
-    margin:2rem 0;
+.member,.phone,.version {
+    background: white;
+    margin: 1rem 0;
+    padding: 2rem;
     font-size: 2rem;
 }
+
 /*联系客服结束*/
 /*用户页结束*/
