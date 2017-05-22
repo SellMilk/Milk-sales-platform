@@ -13,7 +13,7 @@ $(function () {
     var aTips = $('.home-container .tips li');
 
     var iNow = 0;
-
+    $(aTips[iNow]).css({'display':'block'}).addClass('animated zoomIn');
     for(var i=0; i<oDot.length; i++){
         oDot[i].index = i;
         $(oDot[i]).on('click',function () {
