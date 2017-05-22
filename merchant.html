@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商家详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/merchant.css"/>
+</head>
+<body>
+    <div id="index">
+        <div class="wrapper">
+            <!-- header：包含返回，购物车（总的），小菜单，图标均用背景图片；小菜单点击会有弹层弹出菜单-->
+            <header class="merchant-header">
+                <!-- 返回键-->
+                <span class="merchant-return"></span>
+                <!-- 小菜单-->
+                <span class="merchant-option"></span>
+                <!-- 购物车-->
+                <span class="merchant-cart"></span>
+
+                <!-- 小菜单内容-->
+                <ul class="merchant-option-content">
+                    <li class="mdoc-search"><a href="">店内搜索</a></li>
+                    <li class="mdoc-share"><a href="">分享商家</a></li>
+                    <li class="mdoc-detils"><a href="">商家详情</a></li>
+                    <li class="mdoc-collection"><a href="">收藏商家</a></li>
+                </ul>
+                <!-- 商家详情的简述版，点击跳转到最详细的商家详情页-->
+                <div class="merchant-details">
+                    <!-- 商家logo-->
+                    <img src="" alt="" class="merchant-logo"/>
+                    <!-- 商家名称-->
+                    <span class="merchant-name">伊利</span>
+                    <!-- 配送信息-->
+                    <ul class="merchant-expressage">
+                        <li>商家配送<span></span></li>
+                        <li>平均xx分钟<span></span></li>
+                        <li>配送费￥xx</li>
+                    </ul>
+                    <!-- 公告-->
+                    <p class="merchant-notice">公告：。。。。。。。。。。</p>
+                    <!-- 优惠活动-->
+                    <div class="merchant-discount">
+                        优惠活动
+                    </div>
+                    <!-- 跳转到商家具体详情页的向右箭头-->
+                    <span class="merchant-skip"><a href=""></a></span>
+                </div>
+            </header>
+            <!--牛奶菜单：主菜单为牛奶商品和对商家的评价；选项卡；所有的懒加载
+            牛奶商品：分为牛奶的品种和具体的牛奶，具体的牛奶链接到牛奶详情；懒加载
+            商家评价：未完成
+            -->
+            <div class="merchant-milk">
+                <!-- 主菜单-->
+                <ul class="merchant-main-menu">
+                    <li class="selected"><a href="">我的牛奶</a></li>
+                    <li><a href="">评价</a></li>
+                </ul>
+                <!-- 具体的牛奶商品：牛奶z的分类以及具体的牛奶-->
+                <div class="merchant-sub-menu selected">
+                    <!-- 牛奶分类-->
+                    <ul class="merchant-milk-details-type">
+                        <li class="selected"><a href="">鲜牛奶</a><span></span></li>
+                        <li><a href="">高温灭菌奶</a><span></span></li>
+                        <li><a href="">酸牛奶</a><span></span></li>
+                        <li><a href="">奶制品</a><span></span></li>
+                    </ul>
+                    <!-- 具体的牛奶-->
+                    <div class="merchant-milk-details-content">
+                        <ul class="selected">
+                            <li><a href="">鲜牛奶</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">百利包</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">酸牛奶</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">大果粒</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 对商家的评价-----未完成-->
+                <div class="merchant-sub-menu">
+                        评价。。。。。。
+                </div>
+            </div>
+            <!-- footer:固定在底部，主要包含一条重要的优惠信息；
+            本页面的购物车（若没有选购有提示，购物后显示购物车里东西的价钱及配送费），未购物前图片为灰色，购物后为蓝色；
+            结算按钮，未购物时显示多少元起送，还差多少元起送（按钮为灰色），结算（按钮为绿色）。
+            -->
+            <footer class="merchant-footer">
+                <!--优惠信息-->
+                <span class="merchant-footer-discount"></span>
+                <!-- 购物车-->
+                <div class="merchant-footer-cart">
+                    <img src="" alt=""/>
+                    <span></span><span></span>
+                </div>
+                <!-- 按钮-->
+                <input type="button"/>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/merchant.js" type="text/javascript"></script>
+</body>
+</html>
