@@ -47,7 +47,7 @@ $(function () {
         timer = setInterval(function(){
             iNow++;
             if(iNow == aTips.length){
-                iNow = 1;
+                iNow = 0;
             }
             changeImg(iNow);
         }, 5000);
