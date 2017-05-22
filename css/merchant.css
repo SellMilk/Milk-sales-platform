@@ -1,0 +1,136 @@
+/**商家详情开始*!/*/
+/*header开始*/
+.merchant-header {
+    height: 200px;
+    position: relative;
+    border-bottom: 1px solid #000000;
+}
+.merchant-option,.merchant-cart,.merchant-return{
+    cursor: pointer;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+.merchant-header .merchant-return{
+    background: url("../imgs/left%20.png") no-repeat 0 0;
+}
+.merchant-header .merchant-cart{
+    background: url("../imgs/cart.png") no-repeat 0 0;
+    float: right;
+    margin-right: 20px;
+}
+.merchant-header .merchant-option{
+    background: url("../imgs/menu.png") no-repeat 0 0;
+    float: right;
+    margin-right: 10px;
+}
+.merchant-header .merchant-option-content{
+   position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 80px;
+    border: 1px #000000 solid;
+
+    display: none;
+}
+.merchant-header .merchant-option-content li{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+.merchant-header .merchant-option-content li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.merchant-header .merchant-details{
+    height: 150px;
+    margin-top: 16px;
+    /*background: #e4b9b9;*/
+    position: relative;
+}
+.merchant-header .merchant-details .merchant-logo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #0096ff;
+}
+.merchant-header .merchant-details .merchant-name{
+    display: inline-block;
+    height:20px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+.merchant-header .merchant-details .merchant-expressage{
+    position: absolute;
+    top:40px;
+    left: 110px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.merchant-header .merchant-details .merchant-expressage li{
+    float: left;
+    font-size: 0.6rem;
+}
+.merchant-header .merchant-details .merchant-expressage span{
+    display: inline-block;
+    width: 2px;
+    height:10px;
+    background: #eeeeee;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.merchant-header .merchant-details .merchant-notice{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    font-size: 0.5rem;
+}
+.merchant-header .merchant-details .merchant-discount{
+    margin-top: 10px;
+    font-size: 0.5rem;
+}
+.merchant-header .merchant-details .merchant-skip{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../imgs/right%20.png") no-repeat 0 0;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.merchant-header .merchant-details .merchant-skip a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+/*header结束*/
+/*merchant-milk开始*/
+.merchant-milk .merchant-main-menu{
+    display: -webkit-box;
+    text-align: center;
+}
+.merchant-milk .merchant-main-menu li{
+    /*float: left;*/
+    -webkit-box-flex: 1;
+}
+.merchant-milk .merchant-main-menu li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.merchant-milk .merchant-main-menu li.selected{
+    color: blue;
+}
+
+.merchant-milk .merchant-sub-menu{
+    display: none;
+}
+.merchant-milk .merchant-sub-menu.selected{
+    display: block;
+}
+/*merchant-milk结束*/
+/*商家详情结束*/
