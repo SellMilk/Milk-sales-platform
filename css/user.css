@@ -1,11 +1,25 @@
 /*用户页开始*/
-body{
-    background: rgb(244,244,244);
+/*公共样式*/
+body {
+    background: rgb(244, 244, 244);
 }
-/*.userPage-box{*/
-    /*height: 100%;*/
-    /*background: rgb(244,244,244);*/
-/*}*/
+
+.commom h1 {
+    background: white;
+    margin: 0;
+    line-height: 6rem;
+    font-size: 3rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
+}
+
+.commom h1 a {
+    width: 39px;
+    height: 39px;
+    font-size: 3.4rem;
+}
+
+/*公共样式*/
 #userPage-head {
     clear: both;
     height: 150px;
@@ -68,24 +82,23 @@ body{
 #userPage-data span {
     float: right;
 }
+/*会员,联系客服,版本通用样式*/
+.member, .phone, .version {
+    background: white;
+    margin: 1rem 0;
+    padding: 2rem;
+    font-size: 2rem;
+}
 
+/*会员,联系客服,版本通用样式结束*/
+/*会员中心开始*/
+h4 {
+    background: white;
+}
+
+/*会员中心结束*/
 /*用户操作样式结束*/
 /*个人资料样式开始*/
-#userPage-datum h1 {
-    background: white;
-    margin: 0;
-    line-height: 6rem;
-    font-size: 3rem;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 5px rgba(0, 0, 0, .2);
-}
-
-#userPage-datum h1 a {
-    width: 39px;
-    height: 39px;
-    font-size: 3.4rem;
-}
-
 #user-content {
     background: white;
     padding: 0 5%;
@@ -100,7 +113,8 @@ body{
     color: inherit;
     box-sizing: inherit;
 }
-#user-content a:active{
+
+#user-content a:active {
     background: rgba(12, 23, 100, .5);
 }
 
@@ -111,21 +125,8 @@ body{
 
 /*修改昵称开始*/
 
-#nickname-box{
+#nickname-box {
     background: white;
-}
-#nickname-box h1 {
-    margin: 0;
-    line-height: 6rem;
-    font-size: 3rem;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 5px rgba(0, 0, 0, .2);
-}
-
-#nickname-box h1 a {
-    width: 39px;
-    height: 39px;
-    font-size: 3.4rem;
 }
 
 .nickname {
@@ -150,21 +151,8 @@ body{
 
 /*修改昵称结束*/
 /*修改密码开始*/
-#changepwd-box{
+#changepwd-box {
     background: white;
-}
-#changepwd-box h1 {
-    margin: 0;
-    line-height: 6rem;
-    font-size: 3rem;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 5px rgba(0, 0, 0, .2);
-}
-
-#changepwd-box h1 a {
-    width: 39px;
-    height: 39px;
-    font-size: 3.4rem;
 }
 
 .user-chpwd {
@@ -191,21 +179,8 @@ body{
 
 /*修改密码结束*/
 /*收货地址开始*/
-#address-box,#addressEdit-box{
+#address-box, #addressEdit-box {
     background: white;
-}
-#address-box h1, #addressEdit-box h1 {
-    margin: 0;
-    line-height: 6rem;
-    font-size: 3rem;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 5px rgba(0, 0, 0, .2);
-}
-
-#address-box h1 a, #addressEdit-box h1 a {
-    width: 39px;
-    height: 39px;
-    font-size: 3.4rem;
 }
 
 .edit {
@@ -252,18 +227,5 @@ body{
 
 /*收货地址结束*/
 /*个人资料样式结束*/
-/*会员中心开始*/
-h4{
-    background: white;
-}
-/*会员中心结束*/
-/*联系客服开始*/
-.member,.phone,.version {
-    background: white;
-    margin: 1rem 0;
-    padding: 2rem;
-    font-size: 2rem;
-}
 
-/*联系客服结束*/
 /*用户页结束*/
