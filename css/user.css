@@ -57,18 +57,18 @@ body {
 /*用户操作样式开始*/
 #userPage-data {
     margin: 20px 0 0 0;
-    padding: 0 20px;
+    padding: 5px 20px 0;
     background: white;
 }
 
 #userPage-data a {
     display: block;
-    margin: 1.2rem 0 1.2rem 0;
-    padding: 2% 0;
+    /*margin: 1.2rem 0;*/
+    padding: 5% 0;
     border-bottom: 1px solid #ddd;
     color: inherit;
     font-size: 1.8rem;
-    box-sizing: inherit;
+    /*box-sizing: inherit;*/
 }
 
 #userPage-data a:active {
@@ -102,13 +102,14 @@ h4 {
 #user-content {
     background: white;
     padding: 0 5%;
+    margin-top: 1.3%;
 }
 
 #user-content a {
     display: block;
     border-bottom: 1px solid #ddd;
-    margin: 1.2rem 0 1.2rem 0;
-    padding: 2% 0;
+    /*margin: 1.2rem 0 1.2rem 0;*/
+    padding: 5% 0;
     font-size: 1.8rem;
     color: inherit;
     box-sizing: inherit;

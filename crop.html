@@ -29,19 +29,26 @@
             width: 70px;
             overflow: hidden;
         }
+        #portrait{
+            margin-top: 1.3%;
+            padding: 1.3% 0;
+            background: #fff;
+        }
     </style>
 </head>
 <body>
 <div id="index">
-    <div id="portrait" class="commom">
+    <div class="commom">
         <h1><a href="personal.html"><</a>&nbsp&nbsp修改头像</h1>
-        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+    </div>
+<div id="portrait">
+    <canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
         </canvas>
         <br>
         <a href="#"><input type="file" id="file"><br></a>
         <button id="getImg">截图</button>
         <img src="" alt="" id="myImg">
-    </div>
+</div>
 </div>
 <footer class="home-footer">
     <a href="index.html">
