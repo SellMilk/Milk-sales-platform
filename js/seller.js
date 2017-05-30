@@ -1,33 +1,33 @@
 $(function(){
 
-    var $option =$(".merchant-header .merchant-option");
-    var $option_content=$(".merchant-header .merchant-option-content");
+    var $option =$(".seller-header .seller-option");
+    var $option_content=$(".seller-header .seller-option-content");
     $option.click(function(){
         $option_content.css("display","block").hover(function(){
             $option_content.css("display","none");
         });
     });
 
-    var $menu = $(".merchant-milk .merchant-main-menu li");
+    var $menu = $(".seller-milk .seller-main-menu li");
     $menu.click(function(){
         $(this).addClass("selected").siblings().removeClass("selected");
         var index =  $menu.index(this);
-        $(".merchant-milk .merchant-sub-menu")
+        $(".seller-milk .seller-sub-menu")
             .eq(index).addClass("selected").siblings().removeClass("selected");
     });
 
-    var $type = $(".merchant-milk-details-type li");
+    var $type = $(".seller-milk-details-type li");
     $type.click(function(){
         $(this).addClass("selected").siblings().removeClass("selected");
         var index =  $type.index(this);
-        $(".merchant-milk-details-content ul")
+        $(".seller-milk-details-content ul")
             .eq(index).addClass("selected").siblings().removeClass("selected");
     });
 
-    var $add=$(".merchant-milk-details-content .milk-add");
+    var $add=$(".seller-milk-details-content .milk-add");
     $add.click(function(){
-        $(".merchant-footer .merchant-footer-cart .full").css("display","block");
-        $(".merchant-footer .merchant-footer-cart .money").html("Y 2.00").css("color","red");
-        $(".merchant-footer .settlement").html("去结算").css("background","green")
+        $(".seller-footer .seller-footer-cart .full").css("display","block");
+        $(".seller-footer .seller-footer-cart .money").html("Y 2.00").css("color","red");
+        $(".seller-footer .settlement").html("去结算").css("background","green")
     });
 });

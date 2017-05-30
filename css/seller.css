@@ -1,29 +1,30 @@
 /*header开始*/
-.merchant-header {
+.seller-header {
     height: 200px;
     position: relative;
     border-bottom: 1px solid #000000;
+    background: rgba(30,144,255,0.5);
 }
-.merchant-option,.merchant-cart,.merchant-return{
+.seller-option,.seller-cart,.seller-return{
     cursor: pointer;
     display: inline-block;
     width: 34px;
     height: 34px;
 }
-.merchant-header .merchant-return{
+.seller-header .seller-return{
     background: url("../imgs/left%20.png") no-repeat 0 0;
 }
-.merchant-header .merchant-cart{
+.seller-header .seller-cart{
     background: url("../imgs/cart.png") no-repeat 0 0;
     float: right;
     margin-right: 20px;
 }
-.merchant-header .merchant-option{
+.seller-header .seller-option{
     background: url("../imgs/menu.png") no-repeat 0 0;
     float: right;
     margin-right: 10px;
 }
-.merchant-header .merchant-option-content{
+.seller-header .seller-option-content{
    position: absolute;
     top: 35px;
     right: 20px;
@@ -32,37 +33,37 @@
 
     display: none;
 }
-.merchant-header .merchant-option-content li{
+.seller-header .seller-option-content li{
     display: inline-block;
     width: 100%;
     height: 20px;
     border-bottom: 1px solid #eeeeee;
     text-align: center;
 }
-.merchant-header .merchant-option-content li a{
+.seller-header .seller-option-content li a{
     width: 100%;
     height: 100%;
     text-align: center;
 }
-.merchant-header .merchant-details{
+.seller-header .seller-details{
     height: 150px;
     margin-top: 16px;
     /*background: #e4b9b9;*/
     position: relative;
 }
-.merchant-header .merchant-details .merchant-logo{
+.seller-header .seller-details .seller-logo{
     width: 80px;
     height: 80px;
     /*border: 1px solid #0096ff;*/
 }
-.merchant-header .merchant-details .merchant-name{
+.seller-header .seller-details .seller-name{
     display: inline-block;
     height:20px;
     line-height: 20px;
     margin-left: 20px;
     font-size: 1.6rem;
 }
-.merchant-header .merchant-details .merchant-expressage{
+.seller-header .seller-details .seller-expressage{
     position: absolute;
     top:40px;
     left: 110px;
@@ -70,11 +71,11 @@
     line-height: 20px;
     margin-top: 5px;
 }
-.merchant-header .merchant-details .merchant-expressage li{
+.seller-header .seller-details .seller-expressage li{
     float: left;
     font-size: 0.6rem;
 }
-.merchant-header .merchant-details .merchant-expressage span{
+.seller-header .seller-details .seller-expressage span{
     display: inline-block;
     width: 2px;
     height:10px;
@@ -82,17 +83,17 @@
     margin-left: 5px;
     margin-right: 5px;
 }
-.merchant-header .merchant-details .merchant-notice{
+.seller-header .seller-details .seller-notice{
     position: absolute;
     top: 60px;
     left: 100px;
     font-size: 0.5rem;
 }
-.merchant-header .merchant-details .merchant-discount{
+.seller-header .seller-details .seller-discount{
     margin-top: 10px;
     font-size: 0.5rem;
 }
-.merchant-header .merchant-details .merchant-skip{
+.seller-header .seller-details .seller-skip{
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -101,17 +102,17 @@
     top: 40px;
     right: 10px;
 }
-.merchant-header .merchant-details .merchant-skip a{
+.seller-header .seller-details .seller-skip a{
     display: inline-block;
     width: 100%;
     height: 100%;
 }
 /*header结束*/
-/*merchant-milk开始*/
-.merchant-milk{
+/*seller-milk开始*/
+.seller-milk{
     position: relative;
 }
-.merchant-milk .merchant-main-menu{
+.seller-milk .seller-main-menu{
     display: -webkit-box;
     text-align: center;
     border-bottom: 1px solid #eeeeee;
@@ -120,33 +121,33 @@
     font-size: 1.6rem;
     font-weight: bold;
 }
-.merchant-milk .merchant-main-menu li{
+.seller-milk .seller-main-menu li{
     /*float: left;*/
     -webkit-box-flex: 1;
     /*display: inline-block;*/
     /*height: 20px;*/
 }
-.merchant-milk .merchant-main-menu li a{
+.seller-milk .seller-main-menu li a{
     display: inline-block;
     width: 100%;
     height: 100%;
 }
-.merchant-milk .merchant-main-menu li.selected{
+.seller-milk .seller-main-menu li.selected{
     color: blue;
     border-bottom: 1px solid #007aff;
 }
 
-.merchant-milk .merchant-sub-menu{
+.seller-milk .seller-sub-menu{
     display: none;
 }
-.merchant-milk .merchant-sub-menu.selected{
+.seller-milk .seller-sub-menu.selected{
     display: block;
 }
-.merchant-milk-details-type{
+.seller-milk-details-type{
     height: 200px;
     width: 100px;
 }
-.merchant-milk-details-type li{
+.seller-milk-details-type li{
     display: inline-block;
     width: 100%;
     height: 50px;
@@ -156,41 +157,41 @@
     background: #eeeeee;
     font-size: 1.5rem;
 }
-.merchant-milk-details-type li.selected{
+.seller-milk-details-type li.selected{
     background: #FFFFFF;
     /*opacity: 0.5;*/
     color: #000000;
     border-left: 2px solid blue;
 }
-.merchant-milk-details-content ul{
+.seller-milk-details-content ul{
     display: none;
     font-size: 1.5rem;
 }
-.merchant-milk-details-content ul.selected{
+.seller-milk-details-content ul.selected{
     display: block;
 }
-.merchant-milk-details-content{
+.seller-milk-details-content{
     position: absolute;
     left: 110px;
     top: 45px;
     /*width: 200px;*/
 }
-.merchant-milk-details-content ul{
+.seller-milk-details-content ul{
     height: 100px;
     width: 300px;
 }
-.merchant-milk-details-content li{
+.seller-milk-details-content li{
     display: inline-block;
     /*width: 200px;*/
     height: 100px;
     position: relative;
     margin-top: 20px;
 }
-.merchant-milk-details-content li .milk-logo{
+.seller-milk-details-content li .milk-logo{
     width: 50px;
     height: 50px;
 }
-.merchant-milk-details-content li .milk-title{
+.seller-milk-details-content li .milk-title{
     position: absolute;
     top: 0;
     left: 60px;
@@ -200,7 +201,7 @@
     line-height: 20px;
     font-size: 1.6rem;
 }
-.merchant-milk-details-content li .milk-introduction{
+.seller-milk-details-content li .milk-introduction{
     position: absolute;
     top: 20px;
     left: 60px;
@@ -208,7 +209,7 @@
     height: 30px;
     font-size: 0.8rem;
 }
-.merchant-milk-details-content li .milk-price{
+.seller-milk-details-content li .milk-price{
     position: absolute;
     top: 50px;
     left: 60px;
@@ -216,36 +217,21 @@
     color: red;
     font-weight: bolder;
 }
-.merchant-milk-details-content li .milk-add{
+.seller-milk-details-content li .milk-add{
     position: absolute;
     top: 0px;
     left: 200px;
 }
-/*merchant-milk结束*/
+/*seller-milk结束*/
 /*footer开始*/
-html{
-    height: 100%;
-}
-body{
-    height: 100%;
-}
-#index{
-    height: 100%;
-    margin-bottom: 0px;
-}
-.wrapper{
-    position: relative;
-    height: 100%;
-    /*background: #66afe9;*/
-}
-.merchant-footer{
+.seller-footer{
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 100px;
     background: #555555;
 }
-.merchant-footer .merchant-footer-discount{
+.seller-footer .seller-footer-discount{
     display: inline-block;
     width: 100%;
     height: 30px;
@@ -253,10 +239,10 @@ body{
     text-align: center;
     line-height: 30px;
 }
-.merchant-footer .merchant-footer-cart{
+.seller-footer .seller-footer-cart{
     position: relative;
 }
-.merchant-footer .merchant-footer-cart img{
+.seller-footer .seller-footer-cart img{
     width: 50px;
     height: 50px;
     float: left;
@@ -264,10 +250,10 @@ body{
     left: 10px;
     top: -10px;
 }
-.merchant-footer .merchant-footer-cart .full{
+.seller-footer .seller-footer-cart .full{
     display: none;
 }
-.merchant-footer .merchant-footer-cart .money{
+.seller-footer .seller-footer-cart .money{
     display: inline-block;
     height: 70px;
     line-height: 70px;
@@ -277,7 +263,7 @@ body{
     font-size: 1.6rem;
     color: #eeeeee;
 }
-.merchant-footer .settlement{
+.seller-footer .settlement{
     display: inline-block;
     width: 150px;
     height: 70px;
